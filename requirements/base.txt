@@ -1,2 +1,2 @@
-django==1.10
+django==1.10.6
 pylint==1.6.5

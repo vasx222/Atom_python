@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from todo.views import hello, homepage, showtime, nexttime
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^$', homepage),
+ #   url(r'^admin/', admin.site.urls),
+    url(r'^hello/$', hello),
+    url(r'^showtime/$', showtime),
+    url(r'^curtime/(\d{1,2})/$', nexttime),
 ]

@@ -1,0 +1,6 @@
+<html>
+<body>
+Сейчас {{current_date}} ! <br>
+profit
+</body>
+</html>
